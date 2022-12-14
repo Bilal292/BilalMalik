@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sports Forum</title>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+    <style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+
+    <div class="nav-wrapper">
+        <div class="dots-wrapper">
+            <a class="underline" href="index.html"> Go BACK</a>
+        </div>
+        <ul id="navigation">
+			<li><a class="underline" target="_blank" href="CV.pdf"> Download CV</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <br>
+		
+		<h3>Sports Forum - Automated Post Categorisation</h3>
+
+		<p>This was the first project that I built that used a Machine Learning Model to categorise posts on the website
+		<br>
+		<br>
+		    I first created a dataset through collecting tweets from Twitter using tweepy in Python about different sports.
+		<br>
+		<br>
+            After storing tweets in a csv file, I carried out data preprocessing, this involed removing usernames, hashtags, emojis, stopwords, punctuations, and lower-casing words from each tweet.
+		<br>
+		<br>
+            Using this cleaned data, I trained the Naive bayes Machine Learning Model on 75% of data, and tested it using the remaining 25%.
+		<br>
+		<br>
+		Finally I built the web Forum using Django, and implemented the Machine Learning Model to categorise the posts.</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Django</li>
+			<li>- Scikit learn</li>
+			<li>- HTML</li>
+			<li>- CSS</li>
+			<li>- Javascript</li>
+			<li>- Twitter API</li>
+			<li>- NLTK</li>
+		</ul>
+
+        <h5>Landing Page</h5>
+		<div class="img-container">
+			<img src="images/forum/loggedout.png">
+		</div>
+
+        <h5>Registeration Page</h5>
+		<div class="img-container">
+			<img src="images/forum/register.png">
+		</div>
+
+        <h5>Login Page</h5>
+		<div class="img-container">
+			<img src="images/forum/login.png">
+		</div>
+
+        <h5>Logged In Page</h5>
+		<div class="img-container">
+			<img src="images/forum/loggedin.png">
+		</div>
+
+        <h5>Add Post Page</h5>
+		<div class="img-container">
+			<img src="images/forum/addpost.png">
+		</div>
+
+
+        <h5>Delete Post Page</h5>
+		<div class="img-container">
+			<img src="images/forum/deletepost.png">
+		</div>
+
+		<p class="underline"><a target="_blank" href="https://github.com/Bilal292/Sports_Forum_Classification"> Source Code </a></p>
+
+        <p class="underline"><a href="index.html"> Go BACK</a></p>
+
+    </div>
+
+    <script type="text/javascript" src="script.js" ></script>
+
+</body>
+</html>
